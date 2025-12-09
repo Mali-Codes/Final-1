@@ -45,7 +45,7 @@ int main() {
 
     // Milestone 2: Find the airport with the most traffic
 
-    cout << "++++MILESTONE 2 TEST++++" << endl;
+    cout << "++++ MILESTONE 2 ++++" << endl;
 
     int maxTraffic = 0;
 
@@ -65,6 +65,16 @@ int main() {
     }
     cout << endl;
 
+    // Milestone 3: Find the airport in ranges
+
+    int low = 6; 
+    int high = 10;
+
+    cout << "++++ MILESTONE 3 TEST++++" << endl;
+
+    cout << "Airports with traffic between " << low << " and " << high << ":" << endl;
+
+    
 
     
 
