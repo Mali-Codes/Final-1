@@ -14,7 +14,6 @@ int main() {
     }
 
     // Milestone 1: Build the map
-
     map<string, int> airportTraffic;
      
     string origin, destination;
@@ -40,7 +39,6 @@ int main() {
     cout << endl;
 
     // Milestone 2: Find the airport with the most traffic
-
     cout << "++++ MILESTONE 2 ++++" << endl;
 
     int maxTraffic = 0;
@@ -62,7 +60,6 @@ int main() {
     cout << endl;
 
     // Milestone 3: Find the airport in ranges
-
     int low = 6; 
     int high = 10;
 
