@@ -20,12 +20,24 @@ int main() {
     string origin, destination;
 
     while (inFile >> origin >> destination) {
-        airportTraffic[origin]++;
-        airportTraffic[destination]++;
+        if (airportTraffic.find(origin) == airportTraffic.end()) {
+            airportTraffic[origin] = 0;
+        }
+            airportTraffic[origin]++;
+
     }
 
 
-    
+
+    cout << "++++MILESTONE 1 TEST++++" << endl;
+    cout << "Total airports foind : " << airportTraffic.size() << endl;
+
+    for (map<string, int>::iterator i = airportTraffic.begin(); i != airportTraffic.end(); ++i) {
+    cout << i->first << ": " << i->second << endl;
+    }
+    cout << endl;
+
+
     
 
 }
