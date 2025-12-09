@@ -25,6 +25,10 @@ int main() {
         }
             airportTraffic[origin]++;
 
+        if (airportTraffic.find(destination) == airportTraffic.end()) {
+            airportTraffic[destination] = 0;
+        }
+            airportTraffic[destination]++;
     }
 
 
