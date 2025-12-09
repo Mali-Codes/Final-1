@@ -65,7 +65,7 @@ int main() {
 
     cout << "++++ MILESTONE 3 ++++" << endl;
 
-    cout << "Airports with traffic between [" << low << " and " << high << "]:" << endl;
+    cout << "Airports with traffic between [" << low << "," << high << "]:" << endl;
 
         for (map<string, int>::iterator i = airportTraffic.begin(); i != airportTraffic.end(); ++i) {
             if (i->second >= low && i -> second <=high) {
