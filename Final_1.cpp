@@ -81,7 +81,18 @@ int main() {
         }
         cout << endl;
 
-        
+
+    int low2 = 10;
+    int high2 = 15;
+         cout << "Airports with traffic between [" << low2 << "," << high2 << "] :" << endl;
+
+        for (map<string, int>::iterator i = airportTraffic.begin(); i != airportTraffic.end(); ++i) {
+            if (i->second >= low2 && i -> second <=high2) {
+                cout << i->first << ": " << i->second << endl;
+            }
+        }
+        cout << endl;
+
 
 
     
