@@ -50,14 +50,16 @@ int main() {
     int maxTraffic = 0;
 
     for (map<string, int>::iterator i = airportTraffic.begin(); i != airportTraffic.end(); ++i) {
-        if (i -> second > maxTraffic) {
+        if (i -> second >= maxTraffic) {
             maxTraffic = i -> second;
             
         }
     }
 
+    cout << "Busiest Airport: " << maxTraffic << " flights:" << endl;
+
     for (map<string, int>::iterator i = airportTraffic.begin(); i != airportTraffic.end(); ++i) {
-        if (i->second > maxTraffic) {
+        if (i->second == maxTraffic) {
             cout << i->first << ": " << i->second << endl;
         }
     }
