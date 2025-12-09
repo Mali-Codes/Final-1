@@ -13,7 +13,7 @@ int main() {
         return 1;
     }
 
-        // Milestone 1: Build the map
+    // Milestone 1: Build the map
 
     map<string, int> airportTraffic;
      
@@ -31,8 +31,6 @@ int main() {
             airportTraffic[destination]++;
     }
 
-
-
     cout << "++++ MILESTONE 1 ++++" << endl;
     cout << "Total airports foind : " << airportTraffic.size() << endl;
 
@@ -40,8 +38,6 @@ int main() {
     cout << i->first << ": " << i->second << endl;
     }
     cout << endl;
-
-
 
     // Milestone 2: Find the airport with the most traffic
 
@@ -70,9 +66,9 @@ int main() {
     int low = 6; 
     int high = 10;
 
-    cout << "++++ MILESTONE 3 TEST++++" << endl;
+    cout << "++++ MILESTONE 3 ++++" << endl;
 
-    cout << "Airports with traffic between " << low << " and " << high << ":" << endl;
+    cout << "Airports with traffic between [" << low << " and " << high << "]:" << endl;
 
         for (map<string, int>::iterator i = airportTraffic.begin(); i != airportTraffic.end(); ++i) {
             if (i->second >= low && i -> second <=high) {
@@ -81,10 +77,9 @@ int main() {
         }
         cout << endl;
 
-
     int low2 = 10;
     int high2 = 15;
-         cout << "Airports with traffic between [" << low2 << "," << high2 << "] :" << endl;
+         cout << "Airports with traffic between [" << low2 << "," << high2 << "]:" << endl;
 
         for (map<string, int>::iterator i = airportTraffic.begin(); i != airportTraffic.end(); ++i) {
             if (i->second >= low2 && i -> second <=high2) {
@@ -93,8 +88,6 @@ int main() {
         }
         cout << endl;
 
-
-
-    
+    return 0;
 
 }
