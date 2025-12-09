@@ -33,7 +33,7 @@ int main() {
 
 
 
-    cout << "++++MILESTONE 1 TEST++++" << endl;
+    cout << "++++ MILESTONE 1 ++++" << endl;
     cout << "Total airports foind : " << airportTraffic.size() << endl;
 
     for (map<string, int>::iterator i = airportTraffic.begin(); i != airportTraffic.end(); ++i) {
@@ -45,11 +45,18 @@ int main() {
 
     // Milestone 2: Find the airport with the most traffic
 
+    cout << "++++MILESTONE 2 TEST++++" << endl;
+
     int maxTraffic = 0;
 
     for (map<string, int>::iterator i = airportTraffic.begin(); i != airportTraffic.end(); ++i) {
-        if ()
+        if (i -> second >= maxTraffic) {
+            maxTraffic = i -> second;
+            
+        }
+        cout << i -> first << " has the most traffic with " << maxTraffic << " flights" << endl;
     }
+
 
 
 
