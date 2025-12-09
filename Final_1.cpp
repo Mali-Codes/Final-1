@@ -42,6 +42,17 @@ int main() {
     cout << endl;
 
 
+
+    // Milestone 2: Find the airport with the most traffic
+
+    int maxTraffic = 0;
+
+    for (map<string, int>::iterator i = airportTraffic.begin(); i != airportTraffic.end(); ++i) {
+        if ()
+    }
+
+
+
     
 
 }
